@@ -4,9 +4,15 @@ import './index.css';
 //import App from './App';
 //import reportWebVitals from './reportWebVitals';
 
+import Header from './w07-01-lifecycle/Header4';
+import LifecycleEx5 from './w07-01-lifecycle/LifecycleEx5';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <h2>Hello Reactweb!   week7 !! </h2>
+  <div>
+    <Header favcol="yellow"></Header>
+    <LifecycleEx5></LifecycleEx5>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
