@@ -10,13 +10,10 @@ import Header5 from './w07-01-Lifecycle/Header5';
 import Header6 from './w07-01-Lifecycle/Header6';
 
 import MyForm from './w07-02-InputForm/MyForm';
-import MyForm2 from './w07-02-InputForm/MyForm2';
-import MyForm3 from './w07-02-InputForm/MyForm3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-    
     <h1>Hello React 7주차 공부!! </h1>
     <h2>Lifecycle test:</h2>
     <Header></Header>
@@ -31,9 +28,6 @@ root.render(
     <br/>
     <h2>InputForm test:</h2>
     
-    <MyForm2></MyForm2>
-    <MyForm3></MyForm3>
-
   </div>
 
 );
