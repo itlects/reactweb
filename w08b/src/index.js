@@ -1,23 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import MyCar from './w08-01-component/MyCar';
-import MyCar2 from './w08-01-component/MyCar2';
-import Garage from './w08-01-component/MyCar3';
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import MyGarage from './w08-02-list/MyCarList';
-import MyGarage2 from './w08-02-list/MyCarList2';
+import './index.css';
+import App from './App';
+
+import Layout from './w08-03-router/Layout';
+import Home from './w08-03-router/Home';
+import Blog from './w08-03-router/Blog'; 
+import Contact from './w08-03-router/Contact';
+import NoPage from './w08-03-router/NoPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
-    <MyCar></MyCar>
-    <MyCar2 color="white"></MyCar2>
-    <Garage></Garage>
+  <React.StrictMode>
 
-    <MyGarage></MyGarage>
+    {/* 
+    <MyCar />
+    <MyCar2 color="red"/>
+    <MyCar3 /> 
+     
+    <MyList/>
+    <MyList2/>
+    */}
 
-    <MyGarage2></MyGarage2>
-  </>
+    <BrowserRouter >
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />}/>
+          <Route path='blog' element={<Blog />}/>
+          <Route path='contact' element={<Contact />}/>
+          <Route path='*' element={<NoPage />}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 );
 
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
