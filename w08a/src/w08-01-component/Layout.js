@@ -1,7 +1,7 @@
 import {Outlet, Link} from 'react-router-dom';
 
 
-const Layout = ()=>{
+const LayoutComponent = ()=>{
 
     return(
 
@@ -9,9 +9,6 @@ const Layout = ()=>{
 
             <ul>
 
-                <li><Link to='/' >Home</Link></li>
-                <li><Link to='/blog'  >Blog</Link></li>
-                <li><Link to='/contact'  >Contact</Link></li>
                 <li><Link to='/component1/' >HelloMyCar</Link></li>
                 <li><Link to='/component2'  >HelloMyCarProps</Link></li>
                 <li><Link to='/component3'  >HelloMyCarinGarage</Link></li>
@@ -28,4 +25,4 @@ const Layout = ()=>{
 }
 
 
-export default Layout;
+export default LayoutComponent;

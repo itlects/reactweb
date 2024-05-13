@@ -1,4 +1,4 @@
-function MyCar2(props){
+const MyCar2 = (props)=>{
 
     return (
 

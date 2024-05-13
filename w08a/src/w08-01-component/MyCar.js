@@ -1,8 +1,8 @@
-function MyCar(){
+const MyCar = ()=>{
 
     return (
 
-        <h2>Hi!@@  My Car !! </h2>
+        <h2>Hi!@@  Hello My Car !! </h2>
 
     );
 }
