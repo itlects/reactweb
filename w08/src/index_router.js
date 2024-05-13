@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -12,30 +12,20 @@ import MyCar3 from './w08-01-component/MyCar3';
 import MyList from './w08-02-list/MyList';
 import MyList2 from './w08-02-list/MyList2';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Layout from './w08-03-router/Layout';
 import Home from './w08-03-router/Home';
 import Blogs from './w08-03-router/Blogs'; 
 import Contact from './w08-03-router/Contact';
 import NoPage from './w08-03-router/NoPage';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-    {/* 
-    <MyCar />
-    <MyCar2 color="red"/>
-    <MyCar3 /> 
-     
-    <MyList/>
-    <MyList2/>
-    */}
-
     <BrowserRouter >
       <Routes>
-        <Route path='/' element={<Layout />}>
+        <Route path='/index_router' element={<Layout/>}>
           <Route index element={<Home />}/>
           <Route path='blogs' element={<Blogs />}/>
           <Route path='contact' element={<Contact />}/>
