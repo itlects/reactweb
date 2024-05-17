@@ -1,0 +1,18 @@
+$myColor: red;
+
+$myBackgroundColor: Blue;
+
+$myAlterBackgroundColor : Yellow;
+$myAlterColor : red;
+
+.scssStyle h1{
+
+    color: $myColor;
+    background-color: $myBackgroundColor;
+}
+
+.scssBackgroundYellow{
+    background-color: $myAlterBackgroundColor;
+    color: $myAlterColor;
+}
+
