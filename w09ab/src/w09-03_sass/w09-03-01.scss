@@ -4,7 +4,8 @@ $myBackgroundColor: Blue;
 
 $myAlterBackgroundColor : Yellow;
 $myAlterColor : red;
-
+$myNameColor: black;
+$myNameBackgroundColor: bisque;
 .scssStyle h1{
 
     color: $myColor;
@@ -16,3 +17,7 @@ $myAlterColor : red;
     color: $myAlterColor;
 }
 
+.scssNameStyle{
+    color: $myNameColor;
+    background-color: $myNameBackgroundColor;
+}

@@ -45,6 +45,7 @@ root.render(
 
 
     <hr/>
+    <h1 className = 'scssNameStyle'>홍길동A반 실습</h1>
     <div className='scssStyle scssBackgroundYellow'>
       <h1>scssStyle을 적용한 h1태그</h1>
       <ScssHeader></ScssHeader>
