@@ -1,0 +1,21 @@
+$blue : rgb(0, 0, 255);
+$red : rgb(255, 0, 0);
+$green : rgb(0, 255, 0);
+$yellow : rgb(255, 255, 0);
+.scssStyle {
+  .blue {
+    color: blue;
+  }
+
+  .red {
+    color: red;
+  }
+
+  .green {
+    color: green;
+  }
+
+  .yellow {
+    color: yellow;
+  }
+}
