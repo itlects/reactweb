@@ -1,0 +1,11 @@
+<h2>rest 연산자 사용하기 - 함수 매개변수</h2>
+<p>함수의 파라미터가 몇개가 될 지 모르는 상황에서 rest 파라미터를 사용하면 매우 유용</p>
+<p>rest4에서의 예제의 더하기 기능을 추가</p>
+<script>
+  function sum(...rest1) {
+    return rest1.reduce((acc, current) => acc + current, 0);
+  }
+  
+  const result = sum(1, 2, 3, 4, 5, 6);
+  console.log(result); // 21
+</script>

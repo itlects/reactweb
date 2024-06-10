@@ -1,0 +1,10 @@
+<h2>rest 연산자 사용하기 - 함수 매개변수</h2>
+<p>함수의 파라미터가 몇개가 될 지 모르는 상황에서 rest 파라미터를 사용하면 매우 유용</p>
+<script>
+  function sum(...rest) {
+    return rest;
+  }
+  
+  const result = sum(1, 2, 3);
+  console.log(result);
+</script>

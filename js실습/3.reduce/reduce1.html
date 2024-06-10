@@ -1,0 +1,37 @@
+<h2>reduce 내장함수</h2>
+<p>
+  총합을 구하고 싶을 때
+</p>
+<script>
+  const numbers = [1, 2, 3];
+
+  let sum = 0;
+  numbers.forEach(n => {
+    sum += n;
+  });
+  console.log(sum);
+
+</script>
+
+
+<script>
+  const numbers2 = [1, 2, 3, 4, 5];
+  let sum2 = array.reduce((accumulator, current) => accumulator + current, 0);
+
+  console.log(sum2);
+</script>
+
+<p>
+  reduce함수에서 첫번째 (accumulator, current)=> 매개변수를 가져와서 결과를 반환하는 콜백함수
+  두번째 매개변수 0는 reduce함수에서 사용할 초기값
+  accumulator는 누적값을 의미함
+</p>
+<script>
+  const numbers3 = [1, 2, 3];
+  let sum3 = numbers3.reduce((accumulator, current) => {
+    console.log({ accumulator, current });
+    return accumulator + current;
+  }, 0);
+  
+  console.log(sum3);  
+</script>

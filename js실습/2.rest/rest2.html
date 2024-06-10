@@ -1,0 +1,16 @@
+<h2>rest 연산자 사용하기</h2>
+<script>
+  const purpleCuteSlime = {
+    name: '슬라임',
+    attribute: 'cute',
+    color: 'purple'
+  };
+  
+  const { color, ...cuteSlime } = purpleCuteSlime;
+  console.log(color);
+  console.log(cuteSlime);
+  
+  const { attribute, ...slime } = cuteSlime;
+  console.log(attribute);
+  console.log(slime);
+</script>

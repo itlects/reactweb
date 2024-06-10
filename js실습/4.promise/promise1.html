@@ -1,0 +1,15 @@
+<h2>promise를 사용하는 예</h2>
+<p>
+setTimeout을 사용하는 예제입니다.  
+</p>
+<script>
+  const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(1000);
+    }, 1000);
+  });
+  
+  myPromise.then(n => {
+    console.log(n);
+  });
+</script>

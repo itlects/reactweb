@@ -1,0 +1,25 @@
+<h2>reduce 내장함수</h2>
+<p>
+  평균을 구하고 싶을 때
+</p>
+
+<p>
+  reduce함수에서 
+  첫번째 (accumulator, current)=> 매개변수를 가져와서 결과를 반환하는 콜백함수
+  두번째 매개변수 0는 reduce함수에서 사용할 초기값
+  추가 파라미터로 index 와 array 를 사용. 
+  index 는 현재 처리하고 있는 항목이 몇번째인지 가르키고, 
+  array 는 현재 처리하고 있는 배열 자신을 의미
+  accumulator는 누적값을 의미함
+</p>
+<script>
+  const numbers = [100, 90, 80];
+  let sum = numbers.reduce((accumulator, current, index, array) => {
+    if (index === array.length - 1) {
+      return (accumulator + current) / array.length;
+    }
+    return accumulator + current;
+  }, 0);
+  
+  console.log(sum);
+</script>
