@@ -3,7 +3,7 @@ import { UncontrolledCarousel } from 'reactstrap';
 
 const items = [
     {
-      src: 'https://han.gl/q6jDb',
+      src: 'https://picsum.photos/id/123/1200/400',
       altText: '슬라이드1 이미지 대체 문구',
       caption: '슬라이드1 설명',
       header: '슬라이드1 제목'
